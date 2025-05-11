@@ -86,6 +86,21 @@
     from { opacity: 0.2; }
     to { opacity: 1; }
   }
+
+  .numero-7 {
+    position: absolute;
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.8;
+    animation: brilho 2s infinite alternate, movimento 5s linear;
+  }
+
+  @keyframes movimento {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh); }
+  }
+
   /* Galeria de fotos */
 #fotos {
     margin-top: 30px;
@@ -152,4 +167,28 @@
       padding: 8px 16px;
       font-size: 0.9rem;
     }
+  }
+
+  #animacao-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+    color: yellow;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  #animacao-7 h1 {
+    font-size: 10rem;
+    animation: zoomIn 4s ease forwards, fadeOut 4s ease forwards 4s;
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes fadeOut {
+    to { opacity: 0; visibility: hidden; }
   }
