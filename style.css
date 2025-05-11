@@ -174,9 +174,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%; /* Garante que ocupa toda a largura */
     background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
     color: yellow;
     font-family: 'Segoe UI', sans-serif;
+    position: fixed; /* Garante que fica fixo no centro */
+    top: 0;
+    left: 0;
   }
 
   #animacao-7 h1 {
